@@ -46,3 +46,20 @@ function MonthToSeason(Month) {
 const Season = Number(prompt("Enter your month number: "));
 const Last = MonthToSeason(Season);
 alert(Last);
+
+// Elevator
+
+function Elevator(Left, Right, You) {
+    if (You - Left > You - Right) {
+        return alert("Right Elevator is coming...");
+    }
+
+    if (You - Left < You - Right) {
+        return alert("Left Elevator is coming...");
+    }
+}
+
+const You = Number(prompt("Tell me your situation: "));
+const Right = Number(prompt("Tell me right Elevator situation: "));
+const Left = Number(prompt("Tell me left Elevator situation: "));
+const Answer = Elevator(Left, Right, You);
