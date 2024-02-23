@@ -20,3 +20,21 @@ const startingRange = 1;
 const result = sumOfMultiples(first, startingRange, second);
 alert(result);
 
+// Password Generator
+function Password() {
+
+    let length = 6;
+    let char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    let Value = "";
+
+    for (let i = 0, n = char.length; i < length; i++) {
+
+        Value += char.charAt(Math.floor(Math.random() * n))
+
+    }
+
+    return Value
+}
+
+const Pass = Password();
+alert(Pass);
