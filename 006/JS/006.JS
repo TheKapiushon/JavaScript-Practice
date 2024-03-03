@@ -1,19 +1,24 @@
-let ranCharMaker1 = Math.floor(Math.random() * 26) + 97
-let ranCharMaker2 = Math.floor(Math.random() * 26) + 97
-let ranCharMaker3 = Math.floor(Math.random() * 26) + 97
-let ranNumMaker = Math.floor(Math.random() * 11);
-let text1 = String.fromCharCode(ranCharMaker1);
-let text2 = String.fromCharCode(ranCharMaker2);
-let text3 = String.fromCharCode(ranCharMaker3);
+function Pass() {
 
-const textContainer = text1 + text2 + text3
+    let result = ''
+    for (let i = 0; result.length < 6; i++) {
 
-let Final = ''
-for (let i = 0; i < 3; i++) {
-    
-    let ranNumMaker = Math.floor(Math.random() * 10);
-    Final += ranNumMaker
+        let ranNumOneThree = Math.floor(Math.random() * 3)
+        let ranNumHun = Math.floor(Math.random() * 26) + 97
+        let ranNumShe = Math.floor(Math.random() * 26) + 65
+        let ranNum = Math.floor(Math.random() * 10)
+        let ranChar = '!@#$'
+
+        if (ranNumOneThree === 0) {
+            result += String.fromCharCode(ranNumHun) + ranNum
+        } else if (ranNumOneThree === 1) {
+            result += String.fromCharCode(ranNumShe) + ranNum
+        } else if (ranNumOneThree === 2) {
+            result += String.fromCharCode(ranChar) + ranNum
+        }
+    }
+    return result
 }
-Final += textContainer
 
-alert(Final);
+const Password = Pass()
+alert(Password)
