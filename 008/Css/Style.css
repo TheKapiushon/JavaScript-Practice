@@ -1,0 +1,24 @@
+.main-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-img>img {
+    height: 350px;
+    width: 350px;
+}
+
+.other-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.other-img>img {
+    height: 200px;
+    width: 200px;
+    border: 3px solid blue;
+    padding: 2rem;
+    margin: 1rem;
+}
