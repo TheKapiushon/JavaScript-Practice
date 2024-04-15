@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>011 Js</title>
+        <script src="./JS/011.js" defer></script>
+        <link rel="stylesheet" href="./Css/Style.css">
+    </head>
+    <body>
+
+        <!-- Head -->
+        <div class="heading">
+            <h1>TODOS</h1>
+            (<span id="span-num">0</span>)
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="text" placeholder="Search Work"
+                onkeyup="searchWork(event)">
+        </div>
+
+        <!-- Add Job -->
+        <div class="Add-box">
+            <input id="add-in" type="text" placeholder="Add Your Job">
+            <button onclick="addWork()">Add</button>
+        </div>
+
+        <!-- List -->
+        <div class="list-container">
+            <ul id="root">
+            </ul>
+        </div>
+
+    </body>
+</html>
