@@ -1,0 +1,98 @@
+body {
+    background-color: #1f1f1f;
+    color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.heading span {
+    font-size: 30px;
+}
+
+.search-box {
+    margin-left: 3rem;
+}
+
+.search-box input {
+    width: 200px;
+    text-align: center;
+    height: 30px;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+
+.search-box input:focus {
+    outline: none;
+}
+
+.Add-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Add-box input {
+    text-align: center;
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+
+.Add-box button {
+    padding: 8px 32px;
+    background-color: aqua;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.Add-box button:hover {
+    background-color: greenyellow;
+    transition: .5s;
+}
+
+.del-btn {
+    background-color: red;
+    color: white;
+    padding: 8px 32px;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.del-btn:hover {
+    background-color: orange;
+    transition: .5s;    
+}
+
+.list-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-container ul {
+    list-style-type: none;
+    /* display: contents; */
+}
+
+.list-container li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid aqua;
+}
+
+.tx-line {
+    text-decoration: line-through;
+    color: rgb(110, 124, 124);
+}
