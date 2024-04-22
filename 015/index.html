@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./Amount.js" defer></script>
+</head>
+<body>
+    <div class="converter-body">
+
+        <h1 class="converter-heading">Converter</h1>
+
+        <input type="text" placeholder="Enter Your Value" id="input">
+        <span>=</span>
+        <input disabled type="text" placeholder="Your Result" id="result">
+
+        <select id="inputType">
+            <option value="meter">Meter</option>
+            <option value="killometer">Killometer</option>
+            <option value="centimeter">Centimeter</option>
+        </select>
+
+        <select id="resultType">
+            <option value="meter">Meter</option>
+            <option value="killometer">Killometer</option>
+            <option value="centimeter">Centimeter</option>
+        </select>
+
+        <div class="btn">
+            <button id="btn" onclick="myResult()">Amount</button>
+        </div>
+
+    </div>
+</body>
+</html>
