@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه ورود به سایت</title>
+    <link rel="stylesheet" href="./Css/Style.css">
+    <script src="./JS/Log.js" defer></script>
+</head>
+<body>
+    <main class="log-body--container">
+
+        <!-- Log Section -->
+        <section class="log--container">
+            <form action="#">
+                <fieldset>
+                    <p>برای <b>ورود</b> یا <b>ثبت‌نام</b> شماره تلفن همراه خود را وارد کنید.</p>
+                    <legend>شماره تماس</legend>
+                    <input onkeyup="handlePhoneNumber()" type="text" id="Number" placeholder="مثال: 989123456789">
+                    <span></span>
+                    <a onclick="checkNum()" id="submit">ثبت شماره</a>
+                </fieldset>                
+            </form>
+        </section>
+
+    </main>
+</body>
+</html>
