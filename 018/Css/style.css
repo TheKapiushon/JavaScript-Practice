@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'IRANSans';
+    src: url(../Fonts/IRANSansX-Regular.woff2);
+}
+
+* {
+    font-family: 'IRANSans';
+}
+
+body {
+    margin: 0;
+    background-color: #777;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+form {
+    background: white;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #444;
+}
+
+a {
+    text-align: center;
+}
+
+legend {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#submit {
+    margin: 16px 0;
+    padding: 12px;
+    border-radius: 10px;
+    background: #0072bc;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+#Number {
+    width: 340px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.log--container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue-text {
+    color: #0072bc;
+}
+
+.blue-back {
+    background: #0071bc2a;
+}
+
+.trans {
+    transition: .25s;
+}
+
+.red {
+    color: red !important;
+    font-size: 14px;
+}
+
+.succes {
+    background-color: rgb(38, 144, 0) !important;
+    color: white;
+}
