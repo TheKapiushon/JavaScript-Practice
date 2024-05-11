@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <script src="./JS/prods.js"></script>
+    <script src="./JS/app.js" defer></script>
+    <script src="./JS/basket.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1 onclick="render()">Winter Shop</h1>
+        <p onclick="basketRender()" id="basket-container">
+            My basket(<span id="basket">0</span>)
+        </p>
+    </header>
+    
+    <section id="prod">
+
+        <div>
+            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg">
+            <h2>title</h2>
+            <p>descrip</p>
+            <h3>price</h3>
+            <span>rate | count </span>
+            <button>Add To Box</button>
+        </div>
+
+    </section>
+
+</body>
+</html>
